@@ -1,0 +1,16 @@
+{
+  "name": "@consent/i18n",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "i18next": "27.2.2",
+    "react-i18next": "18.0.3"
+  }
+}

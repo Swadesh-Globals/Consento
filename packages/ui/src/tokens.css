@@ -1,0 +1,67 @@
+/* Globals design tokens — source: docs/DESIGN.md. Feature code uses semantic tokens only. */
+:root {
+  --navy-50: #f3f7ff; --navy-100: #e1ecfe; --navy-200: #c3d8ff; --navy-300: #9bbefd; --navy-400: #72a0f6;
+  --navy-500: #5483dd; --navy-600: #3c6bc3; --navy-700: #2753a7; --navy-800: #163d88; --navy-900: #0c2f73; --navy-950: #011545;
+  --aqua-100: #baf9f7; --aqua-200: #92e8e5; --aqua-800: #004d4c;
+  --violet-300: #b4b6fe; --violet-600: #6b5be6;
+  --neutral-200: #d1d8e2; --neutral-400: #98a3b0; --neutral-500: #7c8795; --neutral-700: #4f5966; --neutral-800: #3a434e;
+  --green-100: #c4fbd6; --green-300: #7bd49c; --green-400: #4dba7b; --green-450: #32ac6c; --green-500: #179f5d; --green-700: #07693b;
+  --amber-100: #fee6d0; --amber-300: #f6ac60; --amber-400: #df8c27; --amber-450: #ce7f1b; --amber-500: #bd720f; --amber-600: #9d5e0a;
+  --red-100: #ffe4e0; --red-300: #ffa194; --red-400: #fb6f61; --red-450: #ed5e51; --red-500: #e04c41; --red-700: #a7060c;
+
+  --background: #f6fcff;
+  --surface: #ffffff;
+  --surface-tint: var(--navy-100);
+  --border: var(--neutral-200);
+  --border-strong: var(--neutral-500);
+  --text: #160f03;
+  --text-muted: var(--neutral-700);
+  --primary: var(--navy-900);
+  --primary-hover: var(--navy-800);
+  --on-primary: #ffffff;
+  --secondary: var(--aqua-200);
+  --on-secondary: #160f03;
+  --accent: var(--violet-600);
+  --on-accent: #ffffff;
+  --focus-ring: var(--accent);
+  --success: var(--green-700);
+  --success-fill: var(--green-100);
+  --warning: var(--amber-600);
+  --warning-fill: var(--amber-100);
+  --danger: var(--red-700);
+  --danger-fill: var(--red-100);
+  /* Data-state fills for charts, progress and meters (DESIGN.md: half-step 450 in light, 400 dark). Text never sits on these. */
+  --chart-positive: var(--green-450);
+  --chart-caution: var(--amber-450);
+  --chart-negative: var(--red-450);
+  --chart-neutral: var(--neutral-400);
+
+  --shadow-sm: 0 1px 2px rgba(12, 47, 115, 0.08);
+  --shadow-md: 0 4px 16px rgba(12, 47, 115, 0.1);
+  --shadow-lg: 0 10px 42px rgba(12, 47, 115, 0.14);
+}
+
+:root[data-theme="dark"] {
+  --background: #070d1a;
+  --surface: #101a2e;
+  --surface-tint: #15233f;
+  --border: var(--neutral-800);
+  --text: #eef4fa;
+  --text-muted: var(--neutral-400);
+  --primary: var(--navy-300);
+  --primary-hover: var(--navy-200);
+  --on-primary: #070d1a;
+  --on-secondary: #070d1a;
+  --accent: var(--violet-300);
+  --on-accent: #070d1a;
+  --success: var(--green-400);
+  --warning: var(--amber-300);
+  --danger: var(--red-400);
+  --chart-positive: var(--green-400);
+  --chart-caution: var(--amber-300);
+  --chart-negative: var(--red-400);
+  --chart-neutral: var(--neutral-500);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 10px 42px rgba(0, 0, 0, 0.6);
+}
